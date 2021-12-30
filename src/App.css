@@ -1,0 +1,24 @@
+* {
+  font-family: "Raleway", sans-serif;
+  --swiper-theme-color: #019688;
+}
+.cursor {
+  cursor: pointer;
+}
+.primary-color {
+  color: #282828;
+}
+.primary-bg {
+  background-color: #019688;
+}
+.nav-link:hover {
+  color: #282828 !important;
+  transition: 0.5s ease-in-out;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #282828 !important;
+}
+.swiper-pagination-bullet {
+  background: #000;
+}

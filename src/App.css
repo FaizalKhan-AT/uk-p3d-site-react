@@ -1,15 +1,37 @@
 * {
-  font-family: "Raleway", sans-serif;
-  --swiper-theme-color: #019688;
+  font-family: "Poppins", sans-serif;
+  --swiper-theme-color: #0769b2;
+  --blue-color: #0769b2;
+}
+body {
+  width: 100%;
+}
+@font-face {
+  font-family: gothamblack;
+  src: url(./Assets/fonts/gothamblack.ttf);
+}
+.btn,
+.form-control,
+.form-select {
+  box-shadow: none !important;
+}
+.resize-none {
+  resize: none;
 }
 .cursor {
   cursor: pointer;
+}
+.gotham {
+  font-family: "gothamblack", sans-serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
 .primary-color {
   color: #282828;
 }
 .primary-bg {
-  background-color: #019688;
+  background-color: #0769b2;
 }
 .nav-link:hover {
   color: #282828 !important;
@@ -21,4 +43,14 @@
 }
 .swiper-pagination-bullet {
   background: #000;
+}
+.see-more-btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--blue-color);
+  transition: 0.3s ease;
+}
+.see-more-btn:hover {
+  text-decoration: underline;
 }

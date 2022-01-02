@@ -1,0 +1,8 @@
+.uae-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay-uae {
+  background: rgba(7, 105, 178, 0.4);
+}

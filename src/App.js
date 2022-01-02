@@ -1,17 +1,13 @@
-import Navbar from "./Components/Navbar/Header";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import Banner from "./Components/Banner/Banner";
+import { HashRouter } from "react-router-dom";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Banner />
-        </div>
-      </Router>
+      <HashRouter path="/">
+        <Home />
+      </HashRouter>
     </>
   );
 }

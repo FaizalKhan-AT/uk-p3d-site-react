@@ -1,0 +1,12 @@
+.navbar.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  height: 10vh;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand * {
+  font-family: "Raleway", sans-serif !important;
+}

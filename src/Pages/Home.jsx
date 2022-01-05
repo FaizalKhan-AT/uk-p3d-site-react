@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner/Banner";
+import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Header";
 import BlogSection from "../Sections/BlogSection";
 import DesignServices from "../Sections/DesignServices";
@@ -24,6 +25,9 @@ function Home() {
       <br />
       <br />
       <BlogSection />
+      <br />
+      <br />
+      <Footer />
     </>
   );
 }

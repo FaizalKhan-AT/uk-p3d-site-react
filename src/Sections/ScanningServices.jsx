@@ -7,7 +7,7 @@ function ScanningServices() {
   return (
     <>
       <h2
-        id="3dprintingcustom"
+        id="scanningService"
         className="mx-5 mt-5 mb-3 gotham text-decoration-underline"
       >
         3D Scanning service - UAE

@@ -6,7 +6,7 @@ import "./navbar.css";
 function Header() {
   return (
     <>
-      <header>
+      <header id="home">
         <SocialLInks />
         <Navbar />
       </header>

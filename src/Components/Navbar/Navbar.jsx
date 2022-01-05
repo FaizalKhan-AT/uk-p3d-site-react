@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const navLinks = [
-    "Home",
-    "Store",
-    "3D Printing Custom",
-    "3D Scanning",
-    "Design Services",
+    { name: "Home", id: "home" },
+    { name: "Store", id: "store" },
+    { name: "3D Printing Custom", id: "3dprintingcustom" },
+    { name: "3D Scanning", id: "scanningService" },
+    { name: "Design Services", id: "designService" },
   ];
   useEffect(() => {
     window.addEventListener("scroll", fixNav);
@@ -37,14 +36,15 @@ function Navbar() {
           </span>
           <ul className="navbar-nav mx-3 d-flex align-items-center">
             {navLinks.map((val, idx) => {
+              const { id, name } = val;
               return (
-                <li key={val + idx} className="nav-item mx-2">
-                  <Link
-                    to="3dprintingcustom"
+                <li key={name + idx} className="nav-item mx-2">
+                  <span
                     className="nav-link fs-5 text-light cursor"
+                    onClick={() => document.getElementById(id).scrollIntoView()}
                   >
-                    {val}
-                  </Link>
+                    {name}
+                  </span>
                 </li>
               );
             })}

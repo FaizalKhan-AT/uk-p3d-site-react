@@ -1,0 +1,10 @@
+.blogSection .swiper-button-next,
+.blogSection .swiper-button-prev {
+  background: rgba(18, 18, 18, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+.blogSection .swiper-button-next::after,
+.blogSection .swiper-button-prev::after {
+  color: #fff;
+}

@@ -24,7 +24,7 @@ function Cards(props) {
           >
             {images.map((img, idx) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={idx}>
                   <img
                     className="card-img-top"
                     style={{ objectFit: "contain" }}

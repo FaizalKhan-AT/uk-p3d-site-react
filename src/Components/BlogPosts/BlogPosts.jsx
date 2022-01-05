@@ -3,25 +3,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import Cards from "./Cards";
 import { images } from "../../exampleData";
+import BlogCard from "./BlogCard";
+import "./blog.css";
 
 SwiperCore.use([Navigation]);
-
-function Slides(props) {
+function BlogPosts(props) {
   const { items } = props;
   return (
     <>
+      {" "}
+      <br />
+      <br />
       <Swiper
-        className="mySwiper"
+        className="mySwiper mb-4 blogSection"
         navigation={true}
         spaceBetween={20}
-        slidesPerView={5}
+        slidesPerView={3}
       >
         {items.map((item, idx) => {
           return (
             <SwiperSlide>
-              <Cards key={idx + 4} images={images} index={idx} />
+              <BlogCard key={idx + 4} image={images[idx]} index={idx} />
             </SwiperSlide>
           );
         })}
@@ -33,4 +36,4 @@ function Slides(props) {
   );
 }
 
-export default Slides;
+export default BlogPosts;

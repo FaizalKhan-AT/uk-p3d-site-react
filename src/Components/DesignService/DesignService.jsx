@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function DesignService() {
+  const roughRef = useRef();
+  const cadRef = useRef();
   return (
     <>
       <div
@@ -40,10 +42,18 @@ function DesignService() {
         style={{ bottom: "35px" }}
         className="row position-absolute w-100 translate-middle px-5 start-50 align-items-center justify-content-center"
       >
-        <button className="btn primary-bg text-light col-md-3">
+        <input type="file" accept="images/*" ref={roughRef} hidden />
+        <input type="file" accept=".cad" ref={cadRef} hidden />
+        <button
+          className="btn primary-bg text-light col-md-3"
+          onClick={() => roughRef.current.click()}
+        >
           Rough Sketch or Image
         </button>
-        <button className="btn ms-2 primary-bg text-light col-md-3">
+        <button
+          className="btn ms-2 primary-bg text-light col-md-3"
+          onClick={() => cadRef.current.click()}
+        >
           CAD File
         </button>
       </div>

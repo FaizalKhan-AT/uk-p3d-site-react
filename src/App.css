@@ -3,12 +3,18 @@
   --swiper-theme-color: #0769b2;
   --blue-color: #0769b2;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
 }
 @font-face {
   font-family: gothamblack;
   src: url(./Assets/fonts/gothamblack.ttf);
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 .btn,
 .form-control,
@@ -32,6 +38,9 @@ body {
 }
 .primary-bg {
   background-color: #0769b2;
+}
+.blue-color {
+  color: var(--blue-color);
 }
 .nav-link:hover {
   color: #282828 !important;

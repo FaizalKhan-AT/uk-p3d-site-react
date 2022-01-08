@@ -9,8 +9,10 @@ function Navbar() {
     { name: "3D Scanning", id: "scanningService" },
     { name: "Design Services", id: "designService" },
   ];
+
   let user = false;
   const [navOpen, setNavOpen] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", fixNav);
     return () => {
@@ -50,7 +52,10 @@ function Navbar() {
                 <li key={name + idx} className="nav-item mx-2">
                   <span
                     className="nav-link fs-5 text-light cursor"
-                    onClick={() => document.getElementById(id).scrollIntoView()}
+                    onClick={() => {
+                      document.getElementById(id).scrollIntoView();
+                      setNavOpen(false);
+                    }}
                   >
                     {name}
                   </span>

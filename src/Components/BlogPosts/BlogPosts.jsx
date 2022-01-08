@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/css";
@@ -10,6 +10,22 @@ import "./blog.css";
 SwiperCore.use([Navigation]);
 function BlogPosts(props) {
   const { items } = props;
+  const [slides, setSlides] = useState(3);
+  useEffect(() => {
+    window.addEventListener("resize", handleSlideNumber);
+    handleSlideNumber();
+    return () => {
+      window.removeEventListener("resize", handleSlideNumber);
+      handleSlideNumber();
+    };
+  });
+
+  const handleSlideNumber = () => {
+    if (window.innerWidth > 750) setSlides(3);
+    if (window.innerWidth < 710) setSlides(2);
+    if (window.innerWidth < 500) setSlides(1);
+  };
+
   return (
     <>
       {" "}
@@ -19,12 +35,12 @@ function BlogPosts(props) {
         className="mySwiper mb-4 blogSection"
         navigation={true}
         spaceBetween={20}
-        slidesPerView={3}
+        slidesPerView={slides}
       >
         {items.map((item, idx) => {
           return (
-            <SwiperSlide>
-              <BlogCard key={idx + 4} image={images[idx]} index={idx} />
+            <SwiperSlide key={idx + 2}>
+              <BlogCard key={idx + 3} image={images[idx]} index={idx} />
             </SwiperSlide>
           );
         })}

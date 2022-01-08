@@ -6,3 +6,64 @@
 .overlay-uae {
   background: rgba(7, 105, 178, 0.4);
 }
+@media screen and (max-width: 950px) {
+  .cover-heading {
+    width: 80%;
+  }
+  .cad-btn-s {
+    width: 60%;
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+  .design-s-container {
+    top: 29% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .design-idea-container {
+    flex-direction: column;
+    margin: 2rem 0 !important;
+  }
+  .design-s-container {
+    top: 32% !important;
+  }
+  .cover-heading.service {
+    top: 15% !important;
+  }
+  .service-input-container {
+    bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 545px) {
+  .cover-heading {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cover-heading {
+    width: 96%;
+  }
+  .cad-btn-s {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .component-btn {
+    width: 263px;
+  }
+  .design-idea-input {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .top-heading {
+    margin-left: 1.3rem !important;
+    margin-right: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .cad-btn {
+    width: 200px;
+  }
+}

@@ -7,11 +7,11 @@ function Details() {
         Details
       </h2>
       <div className="details-form-container mx-5 my-3 row">
-        <div className="col-md-6 ">
+        <div className="col-md-6 mb-2">
           <label className="form-label">Name (Contract Person)</label>
           <input type="text" name="name" className="form-control" />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 ">
           <label className="form-label">Email Address</label>
           <input type="email" name="email" className="form-control" />
         </div>

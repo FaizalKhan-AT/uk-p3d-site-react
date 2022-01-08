@@ -7,7 +7,7 @@ function Details() {
         Details
       </h2>
       <div className="details-form-container mx-5 my-3 row">
-        <div className="col-md-6 ">
+        <div className="col-md-6 mb-2">
           <label className="form-label">Name (Contract Person)</label>
           <input type="text" name="name" className="form-control" />
         </div>
@@ -24,7 +24,7 @@ function Details() {
         Project Details
       </div>
       <div className="details-form-container mx-5 my-3 row">
-        <div className="col-md-6 ">
+        <div className="col-md-6 mb-2">
           <label className="form-label">Lead Time</label>
           <input type="text" name="leadTime" className="form-control" />
         </div>

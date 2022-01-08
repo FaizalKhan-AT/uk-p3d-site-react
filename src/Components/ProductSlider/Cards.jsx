@@ -44,11 +44,11 @@ function Cards(props) {
           </div>
           <div className="card-text my-1 text-muted">Category 1</div>
           <div className="ratings my-1">
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-warning"></i>
-            <i class="fas fa-star text-secondary"></i>
+            <i className="fas fa-star text-warning"></i>
+            <i className="fas fa-star text-warning"></i>
+            <i className="fas fa-star text-warning"></i>
+            <i className="fas fa-star text-warning"></i>
+            <i className="fas fa-star text-secondary"></i>
           </div>
           <div className="my-1 mb-2 price">AED {253.3 + (index + 10)}</div>
           <button className="btn text-center add-cart w-100 my-2">

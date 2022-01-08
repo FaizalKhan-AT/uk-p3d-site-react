@@ -42,8 +42,8 @@ function Slides(props) {
       >
         {items.map((item, idx) => {
           return (
-            <SwiperSlide>
-              <Cards key={idx + 4} images={images} index={idx} />
+            <SwiperSlide key={idx + 4}>
+              <Cards images={images} index={idx} />
             </SwiperSlide>
           );
         })}

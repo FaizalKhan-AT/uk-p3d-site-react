@@ -29,6 +29,9 @@
   .close-btn {
     display: block !important;
   }
+  .navbar {
+    padding: 0 0.5rem !important;
+  }
   .navbar-nav {
     position: fixed;
     height: 100vh;
@@ -56,5 +59,21 @@
 @media screen and (max-width: 500px) {
   .navbar.navbar-expand-lg {
     justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 610px) {
+  .social-links-container {
+    flex-direction: column;
+  }
+  .contact-details {
+    width: 100% !important;
+    margin: 5px;
+    justify-content: center;
+    flex-direction: row !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact-details {
+    flex-direction: column !important;
   }
 }

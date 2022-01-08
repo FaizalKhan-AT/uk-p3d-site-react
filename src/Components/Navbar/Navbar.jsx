@@ -66,7 +66,7 @@ function Navbar() {
               </li>
             ) : (
               <Link
-                className="d-flex align-items-center ms-3 btn-outline-light btn text-light border-light fw-bold"
+                className="d-flex align-items-center ms-3 login-link btn-outline-light btn text-light border-light fw-bold"
                 to="/login"
               >
                 Login

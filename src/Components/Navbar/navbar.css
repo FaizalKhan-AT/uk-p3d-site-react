@@ -49,6 +49,9 @@
   .navbar-nav.show-nav {
     left: 0;
   }
+  .login-link {
+    margin-left: 0 !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar.navbar-expand-lg {

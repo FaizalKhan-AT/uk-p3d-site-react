@@ -26,7 +26,7 @@ function Cards(props) {
               return (
                 <SwiperSlide key={idx}>
                   <img
-                    className="card-img-top"
+                    className="card-img-top prod-img"
                     style={{ objectFit: "contain" }}
                     width="160"
                     height="150"
@@ -38,11 +38,11 @@ function Cards(props) {
             })}
           </Swiper>
         </div>
-        <span className="px-2 py-3">
+        <span className="px-2 py-2 pb-3">
           <div className="card-heading fw-bold fs-5">
             Product name {index + 1}
           </div>
-          <div className="card-text my-2 text-muted">Category 1</div>
+          <div className="card-text my-1 text-muted">Category 1</div>
           <div className="ratings my-1">
             <i class="fas fa-star text-warning"></i>
             <i class="fas fa-star text-warning"></i>
@@ -50,7 +50,7 @@ function Cards(props) {
             <i class="fas fa-star text-warning"></i>
             <i class="fas fa-star text-secondary"></i>
           </div>
-          <div className="my-2 price">AED {253.3 + (index + 10)}</div>
+          <div className="my-1 mb-2 price">AED {253.3 + (index + 10)}</div>
           <button className="btn text-center add-cart w-100 my-2">
             Add to Cart
           </button>

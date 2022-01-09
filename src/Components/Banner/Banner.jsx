@@ -11,7 +11,7 @@ function Banner() {
   return (
     <>
       <Swiper
-        style={{ height: "300px" }}
+        style={{ height: "350px" }}
         className="mySwiper fs-1"
         loop={true}
         autoplay={{

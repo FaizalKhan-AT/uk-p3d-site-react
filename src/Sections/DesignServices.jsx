@@ -6,12 +6,9 @@ import Details from "../Components/DesignService/Details";
 function DesignServices() {
   return (
     <>
-      <h2
-        id="designService"
-        className="mx-5 gotham text-decoration-underline top-heading"
-      >
+      <h4 id="designService" className="mx-5 mt-5 mb-4 gotham top-heading">
         Design services - UAE
-      </h2>
+      </h4>
       <div className="position-relative ">
         <img
           style={{ height: "500px" }}
@@ -29,7 +26,9 @@ function DesignServices() {
         <DesignService />
         <br />
       </div>
-      <Details />
+      <div className="container">
+        <Details />
+      </div>
     </>
   );
 }

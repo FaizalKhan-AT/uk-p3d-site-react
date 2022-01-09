@@ -21,6 +21,7 @@ function Slides(props) {
   });
 
   const handleResponsiveness = (e) => {
+    setSpace(false);
     if (window.innerWidth > 1150) setSlides(5);
 
     if (window.innerWidth < 1130) setSlides(4);
@@ -29,15 +30,19 @@ function Slides(props) {
 
     if (window.innerWidth < 680) setSlides(2);
 
-    if (window.innerWidth < 500) setSlides(1);
+    if (window.innerWidth < 500) {
+      setSlides(2);
+      setSpace(true);
+    }
   };
   const [slides, setSlides] = useState(5);
+  const [space, setSpace] = useState(false);
   return (
     <>
       <Swiper
         className="mySwiper"
         navigation={true}
-        spaceBetween={20}
+        spaceBetween={space ? 2 : 20}
         slidesPerView={slides}
       >
         {items.map((item, idx) => {

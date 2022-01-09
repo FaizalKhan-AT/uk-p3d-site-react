@@ -3,9 +3,7 @@ import React from "react";
 function Details() {
   return (
     <>
-      <h2 className="gotham h3 text-decoration-underline mx-5 my-3 mt-4">
-        Details
-      </h2>
+      <h2 className="gotham h5 mx-5 my-4 mt-4 sub-heading">Details</h2>
       <div className="details-form-container mx-5 my-3 row">
         <div className="col-md-6 mb-2">
           <label className="form-label">Name (Contract Person)</label>
@@ -20,9 +18,7 @@ function Details() {
           <input type="tel" name="mobile" className="form-control" />
         </div>
       </div>
-      <div className="gotham h3 text-decoration-underline mx-5 my-3">
-        Project Details
-      </div>
+      <div className="gotham h5 mx-5 my-4 sub-heading">Project Details</div>
       <div className="details-form-container mx-5 my-3 row">
         <div className="col-md-6 mb-2">
           <label className="form-label">Lead Time</label>

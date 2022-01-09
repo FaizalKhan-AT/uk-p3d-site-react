@@ -28,8 +28,8 @@ function Cards(props) {
                   <img
                     className="card-img-top prod-img"
                     style={{ objectFit: "contain" }}
-                    width="160"
-                    height="150"
+                    width="100"
+                    height="100"
                     src={img}
                     alt="product images"
                   />
@@ -38,20 +38,19 @@ function Cards(props) {
             })}
           </Swiper>
         </div>
-        <span className="px-2 py-2 pb-3">
-          <div className="card-heading fw-bold fs-5">
-            Product name {index + 1}
-          </div>
-          <div className="card-text my-1 text-muted">Category 1</div>
-          <div className="ratings my-1">
+        <span className="pt-2  d-flex flex-column align-items-center">
+          <div className="ratings my-2">
             <i className="fas fa-star text-warning"></i>
             <i className="fas fa-star text-warning"></i>
             <i className="fas fa-star text-warning"></i>
             <i className="fas fa-star text-warning"></i>
             <i className="fas fa-star text-secondary"></i>
           </div>
-          <div className="my-1 mb-2 price">AED {253.3 + (index + 10)}</div>
-          <button className="btn text-center add-cart w-100 my-2">
+          <div className="card-text fs-6">Product name {index + 1}</div>
+          <div className="card-text my-1 text-muted">Category 1</div>
+          <div className="my-1 mb-2 price fs-5">AED {253.3 + (index + 10)}</div>
+          <button className="btn text-center add-cart w-100 mt-2">
+            <i className="fas fa-cart-plus me-2"></i>
             Add to Cart
           </button>
         </span>

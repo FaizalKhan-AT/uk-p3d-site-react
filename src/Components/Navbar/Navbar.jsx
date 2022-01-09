@@ -30,6 +30,7 @@ function Navbar() {
   return (
     <>
       <nav
+        style={{ height: "10vh" }}
         ref={navRef}
         className="navbar navbar-expand-lg d-flex align-items-center px-5 justify-content-around primary-bg"
       >
@@ -51,7 +52,7 @@ function Navbar() {
               return (
                 <li key={name + idx} className="nav-item mx-2">
                   <span
-                    className="nav-link fs-5 text-light cursor"
+                    className="nav-link fs-6 text-light cursor"
                     onClick={() => {
                       document.getElementById(id).scrollIntoView();
                       setNavOpen(false);

@@ -7,12 +7,9 @@ import Details from "../Components/3dPrintingService/Details";
 function PrintingService() {
   return (
     <>
-      <h2
-        id="3dprintingcustom"
-        className="mx-5 gotham text-decoration-underline top-heading"
-      >
+      <h4 id="3dprintingcustom" className="mx-5 mt-5 mb-4 gotham top-heading">
         3D Printing service - UAE
-      </h2>
+      </h4>
       <div className="position-relative ">
         <img className="uae-img" src={uae} alt="image of uae" />
         <div className="overlay-uae position-absolute start-0 end-0 top-0 bottom-0 "></div>
@@ -21,7 +18,9 @@ function PrintingService() {
         </h3>
         <PrintingServiceComponent />
       </div>
-      <Details />
+      <div className="container">
+        <Details />
+      </div>
     </>
   );
 }

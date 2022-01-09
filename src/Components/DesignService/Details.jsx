@@ -3,9 +3,7 @@ import React from "react";
 function Details() {
   return (
     <>
-      <h2 className="gotham h3 text-decoration-underline mx-5 my-3 mt-4">
-        Details
-      </h2>
+      <h3 className="gotham h5 mx-5 my-4 mt-4 sub-heading">Details</h3>
       <div className="details-form-container mx-5 my-3 row">
         <div className="col-md-6 mb-2">
           <label className="form-label">Name (Contract Person)</label>

@@ -5,12 +5,9 @@ export default function BlogSection(props) {
   const { image } = props;
   return (
     <>
-      <h2
-        id="blogSection"
-        className="mx-5 mt-5 mb-3 gotham text-decoration-underline top-heading"
-      >
+      <h4 id="blogSection" className="mx-5 mt-5 mb-3 gotham top-heading">
         Subscribe to our blog
-      </h2>
+      </h4>
       <BlogPosts items={[...Array(4)]} />
     </>
   );

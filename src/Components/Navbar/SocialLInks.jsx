@@ -10,44 +10,44 @@ function SocialLInks() {
   const socialIcons = [fb, insta, twitter, linkedin];
   return (
     <>
-      <div className="social-links-container d-flex align-items-center py-2">
-        <div className="py-3 d-flex row justify-content-end w-100">
-          <div className="d-flex col-md-5 justify-content-around">
-            {socialIcons.map((val, idx) => {
-              return (
-                <img
-                  style={{ cursor: "pointer" }}
-                  width="30"
-                  key={idx}
-                  src={val}
-                  alt={val.name}
-                />
-              );
-            })}
+      <div className="social-links-container container d-flex align-items-center">
+        <div className="py-3 d-flex row w-100">
+          <div className="d-flex col-md-6 justify-content-around">
+            <span>
+              <img
+                style={{ cursor: "pointer" }}
+                width="22"
+                src={phone}
+                alt="phone number"
+              />
+              <span className="mx-2 contact-no">123-XXX-3451</span>
+            </span>
+            <div>
+              <img
+                style={{ cursor: "pointer" }}
+                width="22"
+                src={whatsapp}
+                alt="whatsapp number"
+              />
+              <span className="mx-2 contact-no">123-XXX-3451</span>
+            </div>
           </div>
         </div>
         <div
           style={{ width: "300px" }}
-          className="contact-details mx-5 d-flex flex-column align-items-center gap-3"
+          className="contact-details d-flex align-items-center gap-4"
         >
-          <span>
-            <img
-              style={{ cursor: "pointer" }}
-              width="22"
-              src={phone}
-              alt="phone number"
-            />
-            <span className="mx-2">123-XXX-345-XXX</span>
-          </span>
-          <div>
-            <img
-              style={{ cursor: "pointer" }}
-              width="22"
-              src={whatsapp}
-              alt="whatsapp number"
-            />
-            <span className="mx-2">123-XXX-345-XXX</span>
-          </div>
+          {socialIcons.map((val, idx) => {
+            return (
+              <img
+                style={{ cursor: "pointer" }}
+                width="22"
+                key={idx}
+                src={val}
+                alt={val.name}
+              />
+            );
+          })}
         </div>
       </div>
     </>

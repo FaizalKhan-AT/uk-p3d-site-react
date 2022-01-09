@@ -7,12 +7,9 @@ import "./sections.css";
 function ScanningServices() {
   return (
     <>
-      <h2
-        id="scanningService"
-        className="mx-5 mt-5 mb-3 gotham text-decoration-underline top-heading"
-      >
+      <h4 id="scanningService" className="mx-5 mt-5 mb-4 gotham top-heading">
         3D Scanning service - UAE
-      </h2>
+      </h4>
       <div className="position-relative ">
         <img className="uae-img" src={uae1} alt="image of uae" />
         <div className="overlay-uae position-absolute start-0 end-0 top-0 bottom-0 "></div>
@@ -21,7 +18,9 @@ function ScanningServices() {
         </h3>
         <Scanning />
       </div>
-      <Details />
+      <div className="container">
+        <Details />
+      </div>
     </>
   );
 }

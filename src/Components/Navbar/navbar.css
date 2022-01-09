@@ -72,8 +72,9 @@
     flex-direction: row !important;
   }
 }
-@media screen and (max-width: 375px) {
-  .contact-details {
-    flex-direction: column !important;
+@media screen and (max-width: 412px) {
+  .contact-no,
+  .contact-no {
+    font-size: 14px;
   }
 }

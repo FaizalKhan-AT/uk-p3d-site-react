@@ -7,7 +7,7 @@ import Details from "../Components/3dPrintingService/Details";
 function PrintingService() {
   return (
     <>
-      <h4 id="3dprintingcustom" className="mx-5 mt-5 mb-4 gotham top-heading">
+      <h4 id="3dprintingcustom" className="mx-5 my-5 gotham top-heading">
         3D Printing service - UAE
       </h4>
       <div className="position-relative ">

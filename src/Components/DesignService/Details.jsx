@@ -3,7 +3,7 @@ import React from "react";
 function Details() {
   return (
     <>
-      <h3 className="gotham h5 mx-5 my-4 mt-4 sub-heading">Details</h3>
+      <h3 className="gotham h5 mx-5 my-4 mt-5 sub-heading">Details</h3>
       <div className="details-form-container mx-5 my-3 row">
         <div className="col-md-6 mb-2">
           <label className="form-label">Name (Contract Person)</label>
@@ -22,7 +22,7 @@ function Details() {
       <div className="justify-content-center mx-5 mt-5 mb-3 row">
         <button
           style={{ borderRadius: "40px", fontSize: "16px" }}
-          className="btn primary-bg text-light fw-bold  col-md-5"
+          className="btn primary-bg text-light fw-bold col-md-4 py-2"
         >
           Get Quote
         </button>

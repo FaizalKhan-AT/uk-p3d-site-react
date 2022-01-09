@@ -24,6 +24,9 @@
 .close-btn {
   display: none !important;
 }
+.contact-no {
+  font-size: 14px;
+}
 @media screen and (max-width: 1130px) {
   .hamburger,
   .close-btn {
@@ -73,8 +76,7 @@
   }
 }
 @media screen and (max-width: 412px) {
-  .contact-no,
   .contact-no {
-    font-size: 14px;
+    font-size: 13px;
   }
 }

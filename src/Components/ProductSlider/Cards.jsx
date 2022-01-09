@@ -26,7 +26,7 @@ function Cards(props) {
               return (
                 <SwiperSlide key={idx}>
                   <img
-                    className="card-img-top prod-img"
+                    className="card-img-top prod-img pt-2"
                     style={{ objectFit: "contain" }}
                     width="100"
                     height="100"

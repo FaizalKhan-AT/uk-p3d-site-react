@@ -6,7 +6,7 @@ import Details from "../Components/DesignService/Details";
 function DesignServices() {
   return (
     <>
-      <h4 id="designService" className="mx-5 mt-5 mb-4 gotham top-heading">
+      <h4 id="designService" className="mx-5 my-5 gotham top-heading">
         Design services - UAE
       </h4>
       <div className="position-relative ">

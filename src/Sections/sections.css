@@ -6,6 +6,12 @@
 .overlay-uae {
   background: rgba(7, 105, 178, 0.4);
 }
+.cover-heading {
+  color: #fff;
+}
+.top-heading {
+  text-align: center;
+}
 @media screen and (max-width: 950px) {
   .cover-heading {
     width: 80%;

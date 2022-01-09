@@ -10,7 +10,7 @@ function Navbar() {
     { name: "Design Services", id: "designService" },
   ];
 
-  let user = false;
+  let user = true;
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
@@ -35,10 +35,10 @@ function Navbar() {
         className="navbar navbar-expand-lg d-flex align-items-center px-5 justify-content-around primary-bg"
       >
         <div className="container-fluid">
-          <span className="fs-4 text-dark navbar-brand cursor">
+          <Link className="fs-4 text-dark navbar-brand cursor" path="/">
             <span className="fs-2 fw-bold text-light">PRO</span>
             <span className="primary-color fs-1 fw-bold">3D</span>
-          </span>
+          </Link>
           <button className="btn hamburger" onClick={() => setNavOpen(true)}>
             <i className="fas fa-bars fs-3 text-light"></i>
           </button>

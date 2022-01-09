@@ -4,6 +4,7 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { bannerImages } from "../../exampleData";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -26,13 +27,18 @@ function Banner() {
         slidesPerView={1}
       >
         {" "}
-        {[...Array(5)].map((val, idx) => {
+        {bannerImages.map((val, idx) => {
           return (
-            <SwiperSlide
-              key={idx + 4}
-              className="bg-secondary  d-flex align-items-center justify-content-center text-light"
-            >
-              Store offer {idx + 1}
+            <SwiperSlide key={idx + 4} className="">
+              <img
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  zIndex: "-1",
+                }}
+                src={val}
+              />
             </SwiperSlide>
           );
         })}

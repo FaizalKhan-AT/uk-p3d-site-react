@@ -7,7 +7,7 @@ import "./sections.css";
 function ScanningServices() {
   return (
     <>
-      <h4 id="scanningService" className="mx-5 mt-5 mb-4 gotham top-heading">
+      <h4 id="scanningService" className="mx-5 my-5 gotham top-heading">
         3D Scanning service - UAE
       </h4>
       <div className="position-relative ">

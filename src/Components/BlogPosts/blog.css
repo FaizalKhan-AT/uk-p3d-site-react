@@ -8,3 +8,7 @@
 .blogSection .swiper-button-prev::after {
   color: #fff;
 }
+.card.blog-card {
+  border: none;
+  box-shadow: none;
+}

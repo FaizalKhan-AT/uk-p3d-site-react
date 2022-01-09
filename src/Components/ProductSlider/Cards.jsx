@@ -10,7 +10,7 @@ function Cards(props) {
   const { images, index } = props;
   return (
     <>
-      <div className="card">
+      <div className="card prod-card">
         <div className="text-center">
           <Swiper
             className="mySwiper"

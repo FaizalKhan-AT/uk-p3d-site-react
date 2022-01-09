@@ -63,3 +63,12 @@ body {
 .see-more-btn:hover {
   text-decoration: underline;
 }
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.blogSection .card:hover,
+.card.prod-card:hover {
+  transform: translateY(-15px);
+}

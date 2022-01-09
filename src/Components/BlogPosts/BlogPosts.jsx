@@ -32,7 +32,7 @@ function BlogPosts(props) {
       <br />
       <br />
       <Swiper
-        className="mySwiper mb-4 blogSection"
+        className="mySwiper mb-4 blogSection px-2"
         navigation={true}
         spaceBetween={20}
         slidesPerView={slides}
